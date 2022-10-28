@@ -8,7 +8,7 @@ driver = webdriver.Chrome()
 driver.maximize_window()  # полностью развернуть окно браузера
 driver.implicitly_wait(10)# говорим WebDriver искать каждый элемент в течение 30 секунд
 driver.get("https://practice.automationtesting.in") # открываем сайт
-driver.execute_script("window.scrollBy(0, 500);")
+driver.execute_script("window.scrollBy(0, 500);") # пролистываем страницу
 selenium_ruby = driver.find_element(By.CSS_SELECTOR, 'a [title = "Selenium Ruby"]').click()
 revies = driver.find_element(By.CLASS_NAME, 'reviews_tab').click()
 star5 = driver.find_element(By.CLASS_NAME, 'star-5').click()

@@ -1,9 +1,9 @@
 import time
 from selenium import webdriver # импортируем webdriver
 from selenium.webdriver.common.by import By  # импортируем By
-from selenium.webdriver.support.select import Select # импортируем класс селектор
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+#from selenium.webdriver.support.select import Select # импортируем класс селектор
+#from selenium.webdriver.support.ui import WebDriverWait
+#from selenium.webdriver.support import expected_conditions as EC
 driver = webdriver.Chrome()
 driver.maximize_window()  # полностью развернуть окно браузера
 driver.implicitly_wait(10)# говорим WebDriver искать каждый элемент в течение 30 секунд
